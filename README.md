@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/html-cssbem-sass-flexbox-css-custom-properties-tyIFzV4m9)
 - Live Site URL: [Add live site URL here](https://fuyutami.github.io/FEM-3-column-preview-card-component/)
 
 ## My process
