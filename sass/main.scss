@@ -106,7 +106,7 @@ body {
         background-color: var(--very-light-grey);
         cursor: pointer;
 
-        &:active {
+        &:hover {
             background-color: transparent;
             color: var(--very-light-grey) !important;
         }

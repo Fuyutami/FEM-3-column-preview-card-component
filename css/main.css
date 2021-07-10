@@ -109,7 +109,7 @@ body {
   cursor: pointer;
 }
 
-.card__btn:active {
+.card__btn:hover {
   background-color: transparent;
   color: var(--very-light-grey) !important;
 }
