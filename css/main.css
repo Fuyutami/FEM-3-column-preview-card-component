@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-grey: hsl(0, 0%, 95%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--transparent-white);
+  background-color: var(--very-light-grey);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 10px;
+  margin: 5rem 2rem;
+  display: flex;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.card {
+  max-width: 31rem;
+  min-height: 100%;
+  padding: 5rem;
+}
+
+.card--sedans {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card--sedans {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.card--suvs {
+  background-color: var(--dark-cyan);
+}
+
+.card--luxury {
+  background-color: var(--very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .card--luxury {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+.card__image {
+  margin-bottom: 3rem;
+}
+
+.card__heading {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: var(--very-light-grey);
+  margin-bottom: 2.6rem;
+}
+
+.card__description {
+  line-height: 2.5rem;
+  margin-bottom: 8.2rem;
+}
+
+.card__btn {
+  font-size: 1.7rem;
+  border: 2px solid var(--very-light-grey);
+  padding: 1.3rem 2.8rem;
+  border-radius: 50px;
+  background-color: var(--very-light-grey);
+  cursor: pointer;
+}
+
+.card__btn:active {
+  background-color: transparent;
+  color: var(--very-light-grey) !important;
+}
+
+.card__btn--sedans {
+  color: var(--bright-orange);
+}
+
+.card__btn--suvs {
+  color: var(--dark-cyan);
+}
+
+.card__btn--luxury {
+  color: var(--very-dark-cyan);
+}
+
+.attribution {
+  color: #1f1f1f;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+}
